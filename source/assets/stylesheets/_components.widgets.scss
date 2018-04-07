@@ -106,3 +106,42 @@
 		}	
 	}
 }
+
+/* Added by other organizers to the original site */
+.wccsp-header.overlay h1 {
+	margin: 0;
+	margin-bottom: 20px;
+	font-size: 0;
+	font-weight: 300;
+	text-align: center;
+}
+
+/* Added by Travis for 2018 */
+.tix-column-remaining .single-wcb_session footer, .single-wcb_session #content > nav, .single-wcb_session .session-speakers, .single-wcb_session ul#session-speaker-names, .tix-row-question-415, .tix-row-question-423, .type-wcb_speaker .speaker-avatar, .type-wcb_speaker .nav-links {
+	display: none;
+}
+
+.tix-column-remaining {
+	display: none;
+}
+
+.widget h3.widget-title a.rsswidget, .widget h3.widget-title a.rsswidget:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Added by Karissa 3/3/18 */
+#post-194 .entry-thumbnail img {
+	display: none;
+}
+
+.author-info {
+	display: none;
+}
+
+.wcpt-session-speakers::before {
+	content: " &#xBB; ";
+	font-size: 10px;
+	font-size: 1rem;
+	color: #000;
+}
