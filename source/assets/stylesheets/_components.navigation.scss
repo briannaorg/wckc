@@ -30,10 +30,10 @@
   font-weight: $bold;
   text-align: center;
   letter-spacing: .05em;
-  color: $color-link;
+  color: $color-text-strong-invert;
 
   border-radius: 0;
-  background-color: rgba($color-brand-tertiary, .9);
+  background-color: rgba($color-brand-secondary, .9);
 
   cursor: pointer;
 
@@ -42,7 +42,7 @@
   &:focus,
   &.focus {
 
-    color: $color-link-hover;
+    color: $color-text-strong-invert;
     background-color: rgba($color-brand-tertiary, .9);
 
   }
@@ -70,8 +70,6 @@
     margin-left: $unit-xs;
 
     vertical-align: middle;
-
-    border-top-color: $color-link;
 
     content: "";
 
@@ -110,7 +108,8 @@
 
 .main-navigation {
 
-  position: relative;
+	background-color: $color-brand-secondary;
+	position: relative;
 
   &:before {
 
@@ -120,7 +119,6 @@
     right: 0;
 
     height: rem(2);
-    background-color: $color-link;
 
     content: "";
 
@@ -178,10 +176,11 @@
   margin: 0;
   display: block;
 
+  @include font-size(14);
   font-family: $font-headline;
-  font-size: ms(0);
   font-weight: $bold;
   text-align: left;
+  text-transform:uppercase;
 
   @include breakpoint(small) {
 
@@ -199,7 +198,7 @@
 .menu-item a {
 
   display: block;
-  color: $color-link;
+  color: $color-text-strong-invert;
   padding: $unit-xs $unit-s;
 
   text-decoration: none;
@@ -210,8 +209,8 @@
   &:focus,
   &.focus {
 
-    color: $color-text-strong;
-    background-color: $color-link-hover;
+    color: $color-text-strong-invert;
+    //background-color: $color-link-hover;
 
   }
 
@@ -223,7 +222,7 @@
 
   @include breakpoint(large) {
 
-    padding: $unit-m $unit-l;
+    padding: $unit-s $unit-m;
 
   }
 
@@ -231,7 +230,7 @@
 
 .current-menu-item > a {
 
-  color: $color-text-strong;
+  color: $color-text-strong-invert;
   background-color: $color-link;
 
 }
@@ -286,12 +285,12 @@
     &:hover > a,
     &.focus > a {
 
-      color: $color-text-strong;
+      color: $color-text-strong-invert;
       background-color: $color-link;
 
       &:after {
 
-        border-top-color: $color-text-strong;
+        border-top-color: $color-text-strong-invert;
 
       }
 
@@ -306,7 +305,7 @@
 
     &.current-menu-item > a:after {
 
-      border-top-color: $color-text-strong;
+      border-top-color: $color-text-strong-invert;
 
     }
 

@@ -6,7 +6,7 @@
 
   @include container-padding(1.5);
   position: relative;
-  max-width: $container-max-width;
+  max-width: $container-huge-width;
 
 }
 
@@ -72,4 +72,37 @@
 
   }
 
+}
+
+.wcb_widget_sponsors {
+	display: flex;
+	flex-flow: row wrap;
+	
+	h3 {
+		color: $color-brand-secondary;
+		flex: 1 100%;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		font-weight: $regular;
+		border:1px solid $color-brand-secondary;
+		padding: rem(20) 0;
+	}
+	
+	h4.sponsor-level-title {
+		color: $color-text-strong-invert;
+		font-size: ms(0);
+		text-transform: uppercase;
+		background-color: $color-brand-secondary;
+		padding: rem(5) 0;
+	}
+	
+	.sponsor-level {
+		flex: 1 100%;
+		
+		@include breakpoint(medium) {
+			flex: 1 30%;
+			padding: rem(20);
+			justify-content: space-between;
+		}	
+	}
 }

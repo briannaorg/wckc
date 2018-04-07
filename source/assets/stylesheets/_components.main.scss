@@ -72,8 +72,9 @@
 
 #secondary {
 
-  @include container-center();
-
+  max-width: $container-huge-width;
+  margin-left: auto;
+  margin-right: auto;
   text-align: left;
 
 }

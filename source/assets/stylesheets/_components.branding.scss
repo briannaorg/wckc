@@ -28,13 +28,13 @@
   position: relative; // Add position: relative to keep the light beams from leaking out
   overflow: hidden; // Add overflow: hidden to keep light beams from leaking out
 
-  @include container-padding(1.5);
+  @include container-padding(1);
 
   text-align: center;
 
   .home & {
 
-    @include container-padding(3.5);
+    @include container-padding(2);
 
   }
 
@@ -48,12 +48,13 @@
   line-height: 1;
   font-family: $font-headline;
   font-weight: $bold;
-  color: $color-text-strong;
+  color: $color-text-strong-invert;
+  text-transform: uppercase;
 
   a {
 
     display: block;
-    color: $color-link-hover;
+    color: $color-text-strong-invert;
 
     &:hover,
     &:focus,
@@ -96,6 +97,6 @@
   font-family: $font-body;
   font-weight: $regular;
   text-transform: none;
-  color: $color-text-weak;
+  color: $color-text-weak-invert;
 
 }
