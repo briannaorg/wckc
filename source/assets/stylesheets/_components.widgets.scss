@@ -190,3 +190,17 @@
 	font-size: 1rem;
 	color: #000;
 }
+
+.wcorg-mailchimp input[type=submit] {
+	color: $color-text-invert;
+    background-color: $color-button-primary;
+
+    &:hover,
+    &:focus,
+    &:active {
+
+      color: $color-text-strong-invert;
+      background-color: $color-button-primary-hover;
+
+    }
+}
