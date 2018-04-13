@@ -15,7 +15,7 @@
   font-size: ms(1);
   line-height: ms(1);
   font: 700 normal 20px "proxima-nova", Helvetica, Sans-serif;
-  color: $color-brand-secondary;
+  color: $color-brand-primary;
 }
 
 
@@ -137,6 +137,9 @@
 				display: none;
 			}
 			
+			ul {
+				margin-left: 0;
+			}
 			li {
 				list-style: none;
 				
