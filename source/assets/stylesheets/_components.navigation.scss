@@ -177,8 +177,8 @@
   display: block;
 
   @include font-size(14);
-  font-family: $font-headline;
-  font-weight: $bold;
+  font-family: $font-brand-primary;
+  font-weight: $regular;
   text-align: left;
   text-transform:uppercase;
 
