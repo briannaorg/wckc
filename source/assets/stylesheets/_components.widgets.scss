@@ -108,6 +108,19 @@
 	}
 }
 
+#footer-widgets {
+	display: flex;
+	flex-flow: row wrap;
+	
+	.footer-widgets-block {
+		flex: 1 100%;
+		
+		@include breakpoint(medium) {
+			flex: 1 30%;
+		}
+	}	
+}
+
 /* Added by other organizers to the original site */
 .wccsp-header.overlay h1 {
 	margin: 0;
