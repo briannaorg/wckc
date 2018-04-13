@@ -125,6 +125,7 @@
 		
 		@include breakpoint(medium) {
 			flex: 1 30%;
+			min-height: 490px;
 		}
 	}
 	
@@ -198,6 +199,7 @@
 .wcorg-mailchimp input[type=submit] {
 	color: $color-text-invert;
     background-color: $color-button-primary;
+    margin-top: 20px;
 
     &:hover,
     &:focus,
