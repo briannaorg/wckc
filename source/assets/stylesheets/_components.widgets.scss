@@ -65,14 +65,18 @@
 
 .widget_text {
 
-  background-color: $color-grey-10;
+  //background-color: $color-grey-10;
 
   &:before {
 
-    background-color: $color-grey-10!important;
+    //background-color: $color-grey-10!important;
 
   }
 
+}
+
+.site-footer {
+	background-color: $color-grey-10;
 }
 
 .wcb_widget_sponsors {
